@@ -53,11 +53,12 @@ RUN npm install -g markdownlint-cli
 # - (formatter) isort
 # - (formatter) black
 # - (linter)    flake8
+# - (linter)    mypy
 RUN apt-get install -y \
     --no-install-recommends \
     python3 \
     python3-pip
-RUN pip3 install --no-cache-dir --break-system-package isort black flake8
+RUN pip3 install --no-cache-dir --break-system-package isort black flake8 mypy
 
 # .sh
 # - (formatter) shfmt
