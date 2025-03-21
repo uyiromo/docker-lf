@@ -104,6 +104,7 @@ RUN markdownlint --version
 RUN isort --version
 RUN black --version
 RUN flake8 --version
+RUN mypy --version
 RUN shfmt --version
 RUN shellcheck --version
 RUN taplo --version
