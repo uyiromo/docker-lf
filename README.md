@@ -11,7 +11,7 @@ docker build -t docker-lf .
 | language | linter | formatter |
 | --- | --- | --- |
 | markdown | markdownlint-cli | markdownlint-cli |
-| python | flake8 | isort <br> black |
+| python | flake8 <br> mypy | isort <br> black |
 | shell | shellcheck | shfmt |
 | toml | taplo | taplo |
 | yaml | - | yamlfmt |
