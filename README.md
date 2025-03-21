@@ -1,7 +1,12 @@
+<!-- markdownlint-disable MD033 -->
+<!-- markdownlint-disable MD013 -->
+
 # docker-lf
+
 - Dockerfile for Linter/Formatter
 
 ## build
+
 ```bash
 docker build -t docker-lf .
 ```
@@ -20,6 +25,7 @@ docker build -t docker-lf .
 | Dockerfile | hadolint | - |
 
 ## example
+
 ```bash
 % docker run --rm --user $(id -u):$(id -g) -v .:/mnt:Z docker-lf markdownlint /mnt/README.md
 /mnt/README.md:1 MD022/blanks-around-headings Headings should be surrounded by blank lines [Expected: 1; Actual: 0; Below] [Context: "# docker-lf"]
@@ -30,4 +36,3 @@ docker build -t docker-lf .
 /mnt/README.md:22 MD012/no-multiple-blanks Multiple consecutive blank lines [Expected: 1; Actual: 2]
 /mnt/README.md:23 MD012/no-multiple-blanks Multiple consecutive blank lines [Expected: 1; Actual: 3]
 ```
-
